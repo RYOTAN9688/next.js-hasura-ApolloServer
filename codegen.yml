@@ -1,0 +1,9 @@
+overwrite: true
+schema: "https://select-snipe-22.hasura.app/v1/graphql"
+documents: "queries/**/*.ts"
+generates:
+  types/generated/graqhql.tsx:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
